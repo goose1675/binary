@@ -20,9 +20,9 @@ export function PdfSwitcher() {
   return (
     <div>
       {/* Buttons to select which PDF to show */}
-      <button onClick={() => setPdfUrl("/testcs11.pdf")}>Open PDF 1</button>
-      <button onClick={() => setPdfUrl("/testcs12.pdf")}>Open PDF 2</button>
-      <button onClick={() => setPdfUrl("/testcs13.pdf")}>Open PDF 3</button>
+      <button onClick={() => setPdfUrl("/advfunct1.1notes.pdf")}>Open PDF 1</button>
+      <button onClick={() => setPdfUrl("/advfunct1.2notes.pdf")}>Open PDF 2</button>
+      <button onClick={() => setPdfUrl("/advfunct1.3notes.pdf")}>Open PDF 3</button>
 
       {/* Only render iframe when a PDF is selected */}
       {pdfUrl && (
@@ -131,7 +131,7 @@ const G12advfunctions = () => {
             >
               Unit 1 study notes
             </Typography>
-
+            
               {/* No blog posts, just HUD */}
 
           </Paper>        
@@ -150,8 +150,7 @@ const G12advfunctions = () => {
 
             }}
           >
-            
-            
+            <PdfSwitcher/>
 
         </Paper>
         </Grid>              

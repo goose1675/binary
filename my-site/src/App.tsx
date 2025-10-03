@@ -23,6 +23,7 @@ function App() {
         <Route path="/grade12" element={<Grade12dash />} />
         <Route path="/g12physics" element={<G12physics />} />
         <Route path="/g12english" element={<G12english />} />
+        <Route path="/grade12advfunctions" element={<G12advfunctions />} />
       </Routes>
     </BrowserRouter>
   )
