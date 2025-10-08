@@ -237,7 +237,7 @@ const Grade12dash = () => {
             sx={{
               color: '#35a872ff',
               fontFamily: 'BrunoAceSC',
-              textAlign: 'center',
+              textAlign: 'left',
               fontStyle: 'italic',
               pl: { xs: 2, sm: 6, md: 10 },
               pr: { xs: 2, sm: 6, md: 10 },
@@ -246,8 +246,8 @@ const Grade12dash = () => {
               fontSize: { xs: '2rem', sm: '3rem', md: '3.8rem' }, // responsive font size
             }}
           >
-            The initial dashboard for grade 9 posts. 
-            *Need to add buttons for subject pages 
+            The initial dashboard for grade 12 posts. 
+            
             In honor of Alexander Martin the goat.
             
             
@@ -256,7 +256,7 @@ const Grade12dash = () => {
           <Box>
             <Box
               component="img"
-              src="/logo.jpg"
+              src="/doakes.jpg"
               alt="logo"
               sx={{
                 height: { xs: 90, sm: 200, md: 220, lg: 220, xl: 230 },
