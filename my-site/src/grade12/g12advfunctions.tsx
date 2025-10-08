@@ -107,11 +107,11 @@ const G12advfunctions = () => {
       </div>
             <Divider style={{ background: '#35a872ff' }} />
       <Grid container spacing={3} justifyContent="center" sx={{ width: '100%', m: 0 }}>
-        <Grid size={{ xs: 12, sm: 10, md: 8, lg: 7, xl: 12 }}>
+        <Grid size={{ xs: 12, sm: 10, md: 10, lg: 12, xl: 12 }}>
           <Paper
             elevation={3}
             sx={{
-              p: { xs: 1, sm: 2, md: 4, lg: 4, xl: 4 },
+              p: { xs: 1, sm: 2, md: 4, lg: 6, xl: 4 },
               backgroundColor: '#000000ec',
               width: { xs: '99%', sm: '97%', md: '90%', lg: '100%', xl: '100%' },
               maxWidth: { xs: '100%', sm: '100vw', md: '100vw', lg: '100vw', xl: '100vw' },
