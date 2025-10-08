@@ -259,7 +259,7 @@ const G12english = () => {
       </div>
             <Divider style={{ background: '#35a872ff' }} />
       <Grid container spacing={3} justifyContent="center" sx={{ width: '100%', m: 0 }}>
-        <Grid size={{ xs: 12, sm: 10, md: 8, lg: 7, xl: 12 }}>
+        <Grid size={{ xs: 12, sm: 10, md: 8, lg: 10, xl: 12 }}>
           <Paper
             elevation={3}
             sx={{
