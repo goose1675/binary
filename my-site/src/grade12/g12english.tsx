@@ -16,6 +16,28 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import './flashcards.css';
 
+export function PdfSwitcher() {
+  const [pdfUrl, setPdfUrl] = useState<string | null>(null);
+
+  return (
+    <div>
+      {/* Buttons to select which PDF to show */}
+      <button onClick={() => setPdfUrl("/U12 English Lit Theory Review.pdf")}>Open note doc ;)</button>
+
+
+      {/* Only render iframe when a PDF is selected */}
+      {pdfUrl && (
+        <iframe
+          src={pdfUrl}
+          width="100%"
+          height="600px"
+          style={{ border: "none", marginTop: "1rem" }}
+        />
+      )}
+    </div>
+  );
+}
+
 
 type Card = {
   term: string;
@@ -232,17 +254,17 @@ const G12english = () => {
           paddingBottom: '3vw',
         }}
       >
-        <Box sx={{ display: 'flex', alignItems: 'center', mt: 8 }}>
+        <Box sx={{ display: 'static', alignItems: 'center', mt: 8 }}>
           <Typography
             variant="h4"
             gutterBottom
             sx={{
               color: '#35a872ff',
               fontFamily: 'BrunoAceSC',
-              textAlign: 'center',
+              textAlign: 'center',  
               fontStyle: 'italic',
-              pl: { xs: 2, sm: 6, md: 10 },
-              pr: { xs: 2, sm: 6, md: 10 },
+              pl: { xs: 2, sm: 6, md: 10, lg: 10, xl: 10 },
+              pr: { xs: 2, sm: 6, md: 10, lg: 10, xl: 10 },
               pt: { xs: 3, sm: 5 },  // smaller padding on phones
               pb: { xs: 2, sm: 4 },
               fontSize: { xs: '2rem', sm: '3rem', md: '3.8rem' }, // responsive font size
@@ -288,7 +310,7 @@ const G12english = () => {
 
           </Paper>        
           <Divider style={{ background: '#35a872ff' }} />
-            <Paper
+          <Paper
             elevation={3}
             sx={{
               p: { xs: 1, sm: 2, md: 4, lg: 4, xl: 4 },
@@ -302,11 +324,46 @@ const G12english = () => {
 
             }}
           >
-            
+
         <Flashcards />
-            
 
         </Paper>
+        <Paper
+            elevation={3}
+            sx={{
+              p: { xs: 1, sm: 2, md: 4, lg: 4, xl: 4 },
+              backgroundColor: '#000000ec',
+              width: { xs: '99%', sm: '97%', md: '90%', lg: '100%', xl: '100%' },
+              maxWidth: { xs: '100%', sm: '100vw', md: '100vw', lg: '100vw', xl: '100vw' },
+              mx: 'auto',
+              boxSizing: 'border-box',
+              height: { xs: '99%', sm: '97%', md: '90%', lg: '100%', xl: '100%' },
+              maxHeight: { xs: '100%', sm: '120vh', md: '120vh', lg: '120vh', xl: '120vh' }
+
+            }}
+          >
+            <Divider style={{ background: '#35a872ff' }} />
+
+
+          <Typography   
+              variant="h4" gutterBottom sx={{
+                color: '#35a872ff',
+                textAlign: 'center',
+                fontFamily: 'BrunoAceSC',
+                textDecoration: 'underline',
+                fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
+                lineHeight: 2.5
+              }}
+            >
+              U12 English Lit Theory Review
+
+            </Typography>
+            
+            <PdfSwitcher/>
+            
+            </Paper>
+            <Divider style={{ background: '#35a872ff', padding: '5px' }} />
+
         </Grid>              
 
       </Grid>
