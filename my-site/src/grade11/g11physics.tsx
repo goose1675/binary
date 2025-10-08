@@ -20,9 +20,9 @@ export function PdfSwitcher() {
   return (
     <div>
       {/* Buttons to select which PDF to show */}
-      <button onClick={() => setPdfUrl("/advfunct1.1notes.pdf")}>Open PDF 1</button>
-      <button onClick={() => setPdfUrl("/advfunct1.2notes.pdf")}>Open PDF 2</button>
-      <button onClick={() => setPdfUrl("/advfunct1.3notes.pdf")}>Open PDF 3</button>
+      <button onClick={() => setPdfUrl("/advfunct1.1notes.pdf")}>Open 1.1</button>
+      <button onClick={() => setPdfUrl("/advfunct1.2notes.pdf")}>Open 1.2</button>
+      <button onClick={() => setPdfUrl("/advfunct1.3notes.pdf")}>Open 1.3</button>
 
       {/* Only render iframe when a PDF is selected */}
       {pdfUrl && (
