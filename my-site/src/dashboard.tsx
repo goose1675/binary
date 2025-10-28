@@ -166,8 +166,9 @@ const Dashboard1 = () => {
               fontSize: { xs: '1.5rem', sm: '2.2rem', md: '3.8rem' }, // responsive font size
             }}
           >
+            FREE CLASH ROYALE COACHING
             StudyHaste: A place to do smth idrk.
-            For Students By Students.
+            For ECSS By Agam.
             In honor of Alexander Martin the goat.
             
             
