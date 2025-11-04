@@ -167,6 +167,8 @@ const Dashboard1 = () => {
             }}
           >
             FREE CLASH ROYALE COACHING
+            khirithik lost to goblin curse
+            🐺
             StudyHaste: A place to do smth idrk.
             For ECSS By Agam.
             In honor of Alexander Martin the goat.

@@ -12,6 +12,40 @@ import { Link } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import { useState } from "react";
+
+export function PdfSwitcher() {
+  const [pdfUrl, setPdfUrl] = useState<string | null>(null);
+
+  return (
+    <div>
+      {/* Buttons to select which PDF to show */}
+      <button onClick={() => setPdfUrl("/PhysicsLab1.jpg")}>Pic 1</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab2.jpg")}>Pic 2</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab3.jpg")}>Pic 3</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab4.jpg")}>Pic 4</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab5.jpg")}>Pic 5</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab6.jpg")}>Pic 6</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab7.jpg")}>Pic 7</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab8.jpg")}>Pic 8</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab9.jpg")}>Pic 9</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab10.jpg")}>Pic 10</button>
+      <button onClick={() => setPdfUrl("/PhysicsLab11.jpg")}>Pic 11</button>
+
+      {/* Only render iframe when a PDF is selected */}
+      {pdfUrl && (
+        <iframe
+          src={pdfUrl}
+          width="100%"
+          height="600px"
+          style={{ border: "none", marginTop: "1rem" }}
+        />
+      )}
+    </div>
+  );
+}
+
+
 
 
 const G12physics = () => {
@@ -125,11 +159,7 @@ const G12physics = () => {
 
             }}
           >
-        <iframe 
-            src="/testcs11.pdf" 
-            width="100%" 
-            height="600px">
-        </iframe>
+            <PdfSwitcher />
             
 
         </Paper>
