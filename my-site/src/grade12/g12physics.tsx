@@ -105,7 +105,7 @@ const G12physics = () => {
               fontSize: { xs: '2rem', sm: '3rem', md: '3.8rem' }, // responsive font size
             }}
           >
-            This is a sample blank page!!!!!!
+            right click each picture and click "Open image in new tab"!!!!!!
             
             
           </Typography>

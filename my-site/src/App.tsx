@@ -9,6 +9,7 @@ import Grade12dash from './grade12/grade12dash.tsx';
 import G12physics from './grade12/g12physics.tsx';
 import G12english from './grade12/g12english.tsx';
 import G12advfunctions from './grade12/g12advfunctions.tsx';
+import G12chemistry from './grade12/g12chemistry.tsx';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/g12physics" element={<G12physics />} />
         <Route path="/g12english" element={<G12english />} />
         <Route path="/grade12advfunctions" element={<G12advfunctions />} />
+        <Route path="/g12chemistry" element={<G12chemistry />} />
       </Routes>
     </BrowserRouter>
   )

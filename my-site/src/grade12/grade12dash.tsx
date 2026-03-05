@@ -248,7 +248,7 @@ const Grade12dash = () => {
           >
             The initial dashboard for grade 12 posts. 
             
-            In honor of Alexander Martin the goat.
+            
             
             
           </Typography>

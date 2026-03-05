@@ -20,12 +20,14 @@ export function PdfSwitcher() {
   return (
     <div>
       {/* Buttons to select which PDF to show */}
-      <button onClick={() => setPdfUrl("/advfunct1.1notes.pdf")}>Open PDF 1</button>
-      <button onClick={() => setPdfUrl("/advfunct1.2notes.pdf")}>Open PDF 2</button>
-      <button onClick={() => setPdfUrl("/advfunct1.3notes.pdf")}>Open PDF 3</button>
+      <button onClick={() => setPdfUrl("/advfunct1.1notes.pdf")}> 1.1</button>
+      <button onClick={() => setPdfUrl("/advfunct1.2notes.pdf")}> 1.2</button>
+      <button onClick={() => setPdfUrl("/advfunct1.3notes.pdf")}> 1.3</button>
       <button onClick={() => setPdfUrl("/McGrawHillChapter1.pdf")}>McGraw Hill Ch 1</button>
       <button onClick={() => setPdfUrl("/McGrawhillChapter2 (1).pdf")}>McGraw Hill Ch 2</button>
       <button onClick={() => setPdfUrl("/McGrawHillChapter3 (1).pdf")}>McGraw Hill Ch 3</button>
+      <button onClick={() => setPdfUrl("/chapter4and5.pdf")}>McGraw Hill Ch 4 and 5</button>
+      <button onClick={() => setPdfUrl("/Chapter6.pdf")}>McGraw Hill Ch 6</button>
 
       {/* Only render iframe when a PDF is selected */}
       {pdfUrl && (

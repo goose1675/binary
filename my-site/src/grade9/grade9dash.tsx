@@ -184,7 +184,7 @@ const Grade9dash = () => {
           >
             The initial dashboard for grade 9 posts. 
             *Need to add buttons for subject pages 
-            In honor of Alexander Martin the goat.
+            
             
             
           </Typography>
