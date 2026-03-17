@@ -131,6 +131,8 @@ const Grade12dash = () => {
               Physics
             </Button>
             <Button
+              component={Link}
+              to="/g12chemistry"
               color="inherit"
               sx={{
                 fontFamily: 'BrunoAceSC',

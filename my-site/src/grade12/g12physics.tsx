@@ -105,8 +105,7 @@ const G12physics = () => {
               fontSize: { xs: '2rem', sm: '3rem', md: '3.8rem' }, // responsive font size
             }}
           >
-            right click each picture and click "Open image in new tab"!!!!!!
-            
+            add bs text here idfk            
             
           </Typography>
         </Box>
